@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for packages/bpk-component-calendar/src/Week.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">packages/bpk-component-calendar/src</a> Week.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">91.18% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>31/34</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">91.18% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>31/34</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>27/30</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">168x</span>
+<span class="cline-any cline-yes">168x</span>
+<span class="cline-any cline-yes">1806x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">102x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">168x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">168x</span>
+<span class="cline-any cline-yes">102x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">79x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">79x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">79x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">79x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">203x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">203x</span>
+<span class="cline-any cline-yes">203x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">203x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1421x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1421x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1421x</span>
+<span class="cline-any cline-yes">1421x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1421x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
+ * Backpack - Skyscanner's Design System
+ *
+ * Copyright 2017 Skyscanner Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+&nbsp;
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { cssModules } from 'bpk-react-utils';
+&nbsp;
+import {
+  getDay,
+  getFirstDayOfWeekend,
+  getLastDayOfWeekend,
+  isSameDay,
+  isSameWeek,
+  isSameMonth,
+  isToday,
+  isWithinRange,
+} from './date-utils';
+import CustomPropTypes from './custom-proptypes';
+import STYLES from './bpk-calendar-grid.scss';
+&nbsp;
+const getClassName = cssModules(STYLES);
+&nbsp;
+const shallowEqualProps = (props1, props2, propList) =&gt; {
+  let i = 0;
+  for (; i &lt; propList.length; i += 1) {
+    if (props1[propList[i]] !== props2[propList[i]]) { return false; }
+  }
+  return true;
+};
+&nbsp;
+/*
+  Week - table row containing a week full of DateContainer components
+*/
+class Week extends Component {
+  shouldComponentUpdate(nextProps) {
+    const shallowProps = [
+      'DateComponent',
+      'dateModifiers',
+      'daysOfWeek',
+      'formatDateFull',
+      'isKeyboardFocusable',
+      'markOutsideDays',
+      'markToday',
+      'onDateClick',
+      'onDateKeyDown',
+      'preventKeyboardFocus',
+      'showWeekendSeparator',
+      'weekStartsOn',
+      'dates',
+    ];
+&nbsp;
+    if (!shallowEqualProps(this.props, nextProps, shallowProps)) { return true; }
+    if (
+      (isSameWeek(nextProps.focusedDate, nextProps.dates[0], { weekStartsOn: nextProps.weekStartsOn })
+        || isSameWeek(this.props.focusedDate, this.props.dates[0], { weekStartsOn: this.props.weekStartsOn })
+      ) &amp;&amp; this.props.focusedDate !== nextProps.focusedDate) {
+      return true;
+    }
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (
+      (isSameWeek(nextProps.selectedDate, nextProps.dates[0], { weekStartsOn: nextProps.weekStartsOn })
+        || isSameWeek(this.props.selectedDate, this.props.dates[0], { weekStartsOn: this.props.weekStartsOn })
+      ) &amp;&amp; this.props.selectedDate !== nextProps.selectedDate) {
+<span class="cstat-no" title="statement not covered" >      return true;</span>
+    }
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!isSameDay(nextProps.minDate, this.props.minDate)) {
+<span class="cstat-no" title="statement not covered" >      return true;</span>
+    }
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!isSameDay(nextProps.maxDate, this.props.maxDate)) {
+<span class="cstat-no" title="statement not covered" >      return true;</span>
+    }
+&nbsp;
+    return false;
+  }
+&nbsp;
+  render() {
+    const {
+      DateComponent,
+      dateModifiers,
+      daysOfWeek,
+      focusedDate,
+      formatDateFull,
+      isKeyboardFocusable,
+      markOutsideDays,
+      markToday,
+      maxDate,
+      minDate,
+      month,
+      onDateClick,
+      onDateKeyDown,
+      preventKeyboardFocus,
+      selectedDate,
+      showWeekendSeparator,
+    } = this.props;
+&nbsp;
+    const firstDayOfWeekendIndex = getFirstDayOfWeekend(daysOfWeek);
+    const lastDayOfWeekendIndex = getLastDayOfWeekend(daysOfWeek);
+&nbsp;
+    return (
+      &lt;tr
+        className={getClassName('bpk-calendar-grid__week')}
+      &gt;{ this.props.dates.map(date =&gt; (
+        &lt;DateContainer
+          key={date.getDate()}
+          weekendStart={showWeekendSeparator &amp;&amp; firstDayOfWeekendIndex === getDay(date)}
+          weekendEnd={showWeekendSeparator &amp;&amp; lastDayOfWeekendIndex === getDay(date)}
+        &gt;
+          &lt;DateComponent
+            date={date}
+            modifiers={dateModifiers}
+            aria-label={formatDateFull(date)}
+            onClick={onDateClick}
+            onDateKeyDown={onDateKeyDown}
+            preventKeyboardFocus={preventKeyboardFocus}
+            isKeyboardFocusable={isKeyboardFocusable}
+            isFocused={isSameDay(date, focusedDate)}
+            isSelected={isSameDay(date, selectedDate)}
+            isBlocked={(minDate &amp;&amp; maxDate) ? !isWithinRange(date, minDate, maxDate) : false}
+            isOutside={markOutsideDays &amp;&amp; !isSameMonth(date, month)}
+            isToday={markToday &amp;&amp; isToday(date)}
+          /&gt;
+        &lt;/DateContainer&gt;
+      ))}
+      &lt;/tr&gt;
+    );
+  }
+}
+&nbsp;
+Week.propTypes = {
+  DateComponent: PropTypes.func.isRequired,
+  dateModifiers: CustomPropTypes.DateModifiers.isRequired,
+  dates: PropTypes.arrayOf(Date).isRequired,
+  daysOfWeek: CustomPropTypes.DaysOfWeek.isRequired,
+  formatDateFull: PropTypes.func.isRequired,
+  preventKeyboardFocus: PropTypes.bool.isRequired,
+  showWeekendSeparator: PropTypes.bool.isRequired,
+  markToday: PropTypes.bool.isRequired,
+  markOutsideDays: PropTypes.bool.isRequired,
+  isKeyboardFocusable: PropTypes.bool.isRequired,
+  month: PropTypes.instanceOf(Date).isRequired,
+  weekStartsOn: PropTypes.number.isRequired,
+  focusedDate: PropTypes.instanceOf(Date),
+  maxDate: PropTypes.instanceOf(Date),
+  minDate: PropTypes.instanceOf(Date),
+  onDateClick: PropTypes.func,
+  onDateKeyDown: PropTypes.func,
+  selectedDate: PropTypes.instanceOf(Date),
+};
+&nbsp;
+Week.defaultProps = {
+  focusedDate: null,
+  maxDate: null,
+  minDate: null,
+  onDateClick: null,
+  onDateKeyDown: null,
+  selectedDate: null,
+};
+&nbsp;
+/*
+  DateContainer - one for each date in the grid; wraps the actual BpkCalendarDate (or custom) component
+*/
+const DateContainer = (props) =&gt; {
+  const classNames = [getClassName('bpk-calendar-grid__date')];
+&nbsp;
+  if (props.weekendStart) { classNames.push(getClassName('bpk-calendar-grid__date--weekend-start')); }
+  if (props.weekendEnd) { classNames.push(getClassName('bpk-calendar-grid__date--weekend-end')); }
+&nbsp;
+  return (
+    &lt;td
+      className={classNames.join(' ')}
+    &gt;
+      { props.children }
+    &lt;/td&gt;
+  );
+};
+&nbsp;
+DateContainer.propTypes = {
+  children: PropTypes.element.isRequired,
+  weekendStart: PropTypes.bool.isRequired,
+  weekendEnd: PropTypes.bool.isRequired,
+};
+&nbsp;
+export default Week;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Dec 01 2017 13:20:44 GMT+0000 (GMT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

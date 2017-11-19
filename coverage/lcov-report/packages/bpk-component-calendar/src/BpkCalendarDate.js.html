@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for packages/bpk-component-calendar/src/BpkCalendarDate.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">packages/bpk-component-calendar/src</a> BpkCalendarDate.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">91.89% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>34/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">82.93% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>34/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">93.1% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>27/29</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">222x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">761x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">761x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">761x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">478x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">222x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">214x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">761x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1239x</span>
+<span class="cline-any cline-yes">1239x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1239x</span>
+<span class="cline-any cline-yes">42x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1239x</span>
+<span class="cline-any cline-yes">1239x</span>
+<span class="cline-any cline-yes">1239x</span>
+<span class="cline-any cline-yes">1239x</span>
+<span class="cline-any cline-yes">1239x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1239x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1239x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
+ * Backpack - Skyscanner's Design System
+ *
+ * Copyright 2017 Skyscanner Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+&nbsp;
+import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react';
+import { cssModules } from 'bpk-react-utils';
+&nbsp;
+import CustomPropTypes from './custom-proptypes';
+&nbsp;
+import STYLES from './bpk-calendar-date.scss';
+&nbsp;
+const getClassName = cssModules(STYLES);
+&nbsp;
+const navigatedByMonthNudger = () =&gt;
+  document.activeElement.id &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >document.activeElement.id.indexOf('month_nudger') !== -1;</span>
+&nbsp;
+class BpkCalendarDate extends PureComponent {
+  constructor() {
+    super();
+&nbsp;
+    this.getButtonRef = this.getButtonRef.bind(this);
+  }
+&nbsp;
+  componentDidMount() {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!this.props.preventKeyboardFocus &amp;&amp; this.props.isFocused) {
+      // If we got here by clicking the nudger, don't focus this date
+<span class="cstat-no" title="statement not covered" >      if (!navigatedByMonthNudger()) {</span>
+        // Giving focus after instantiation
+<span class="cstat-no" title="statement not covered" >        this.button.focus();</span>
+      }
+    }
+  }
+&nbsp;
+  componentDidUpdate(prevProps) {
+    if (!this.props.isKeyboardFocusable || this.props.preventKeyboardFocus || navigatedByMonthNudger()) { return; }
+&nbsp;
+    // Giving focus after keyboard navigation
+    if (!prevProps.isFocused &amp;&amp; this.props.isFocused &amp;&amp; this.props.isKeyboardFocusable) {
+      this.button.focus();
+      return;
+    }
+&nbsp;
+    // Giving focus after changing months with transition
+    if (this.props.isFocused &amp;&amp; !prevProps.isKeyboardFocusable &amp;&amp; this.props.isKeyboardFocusable) {
+      this.button.focus();
+    }
+  }
+&nbsp;
+  getButtonRef(button) {
+    this.button = button;
+  }
+&nbsp;
+  render() {
+    const {
+      date,
+      modifiers,
+      onClick,
+      onDateKeyDown,
+      isFocused,
+      isSelected,
+      isBlocked,
+      isOutside,
+      isToday,
+      isKeyboardFocusable,
+      ...buttonProps
+    } = this.props;
+    const classNames = [getClassName('bpk-calendar-date')];
+&nbsp;
+    Object.keys(modifiers).forEach((modifier) =&gt; {
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (modifiers[modifier](this.props)) { classNames.push(getClassName(`bpk-calendar-date--modifier-${modifier}`)); }
+    });
+&nbsp;
+    if (isFocused) { classNames.push(getClassName('bpk-calendar-date--focused')); }
+    if (isSelected) { classNames.push(getClassName('bpk-calendar-date--selected')); }
+    if (isBlocked) { classNames.push(getClassName('bpk-calendar-date--blocked')); }
+    if (isOutside) { classNames.push(getClassName('bpk-calendar-date--outside')); }
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (isToday) { <span class="cstat-no" title="statement not covered" >classNames.push(getClassName('bpk-calendar-date--today')); </span>}
+&nbsp;
+    delete buttonProps.preventKeyboardFocus;
+&nbsp;
+    return (
+      &lt;button
+        type="button"
+        className={classNames.join(' ')}
+        aria-label={date.getDate()}
+        disabled={isBlocked}
+        tabIndex={(isKeyboardFocusable &amp;&amp; isFocused) ? '0' : '-1'}
+        onClick={() =&gt; { <span class="missing-if-branch" title="else path not taken" >E</span>if (onClick) { onClick(date); } }}
+        onKeyDown={onDateKeyDown}
+        aria-pressed={isSelected}
+        ref={this.getButtonRef}
+        {...buttonProps}
+      &gt;&lt;span aria-hidden="true"&gt;{ date.getDate() }&lt;/span&gt;
+      &lt;/button&gt;
+    );
+  }
+}
+&nbsp;
+BpkCalendarDate.propTypes = {
+  // Required
+  date: PropTypes.instanceOf(Date).isRequired,
+  // Optional
+  isBlocked: PropTypes.bool,
+  isFocused: PropTypes.bool,
+  isKeyboardFocusable: PropTypes.bool,
+  isOutside: PropTypes.bool,
+  isSelected: PropTypes.bool,
+  isToday: PropTypes.bool,
+  modifiers: CustomPropTypes.DateModifiers,
+  onClick: PropTypes.func,
+  onDateKeyDown: PropTypes.func,
+  preventKeyboardFocus: PropTypes.bool,
+};
+&nbsp;
+BpkCalendarDate.defaultProps = {
+  isBlocked: false,
+  isFocused: false,
+  isKeyboardFocusable: true,
+  isOutside: false,
+  isSelected: false,
+  isToday: false,
+  modifiers: {},
+  onClick: null,
+  onDateKeyDown: null,
+  preventKeyboardFocus: true,
+};
+&nbsp;
+export default BpkCalendarDate;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Dec 01 2017 13:20:44 GMT+0000 (GMT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
