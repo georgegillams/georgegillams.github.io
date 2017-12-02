@@ -1,6 +1,6 @@
 {
   "name": "curriculum-vitae",
-  "homepage": "https://georgegillams.github.io/georgegillams.github.io",
+  "homepage": "https://georgegillams.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,9 +16,10 @@
     "react-file-reader": "git://github.com/georgegillams/react-file-reader.git#add-support-for-userland-styling"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "npm run build && gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
     "lint:scss:fix": "stylefmt --recursive 'src/**/*.scss'",
