@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for packages/bpk-component-ticket/src/BpkTicket.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">packages/bpk-component-ticket/src</a> BpkTicket.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">88.89% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>40/45</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">85.71% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>12/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90.48% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>38/42</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
+ * Backpack - Skyscanner's Design System
+ *
+ * Copyright 2017 Skyscanner Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+&nbsp;
+import PropTypes from 'prop-types';
+import React from 'react';
+import { cssModules } from 'bpk-react-utils';
+&nbsp;
+import STYLES from './bpk-ticket.scss';
+&nbsp;
+const getClassName = cssModules(STYLES);
+&nbsp;
+const isIE9 = () =&gt; {
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof window === 'undefined') <span class="cstat-no" title="statement not covered" >return false;</span>
+  return (window.navigator.appVersion.indexOf('MSIE 9.') !== -1);
+};
+&nbsp;
+const BpkTicket = (props) =&gt; {
+  const {
+    children, href, padded, stub, vertical, className, stubClassName, stubProps, ...rest
+  } = props;
+  const classNames = [getClassName('bpk-ticket')];
+  const mainClassNames = ['bpk-ticket__paper', 'bpk-ticket__main'].map(getClassName);
+  const stubClassNames = ['bpk-ticket__paper', 'bpk-ticket__stub'].map(getClassName);
+  const punchlineClassNames = [getClassName('bpk-ticket__punchline')];
+  const startNotchClassNames = [getClassName('bpk-ticket__notch')];
+  const endNotchClassNames = [getClassName('bpk-ticket__notch')];
+  const fallback = isIE9();
+&nbsp;
+  if (className) { classNames.push(className); }
+  if (stubClassName) { stubClassNames.push(stubClassName); }
+  if (padded) {
+    mainClassNames.push(getClassName('bpk-ticket__main--padded'));
+    stubClassNames.push(getClassName('bpk-ticket__stub--padded'));
+  }
+  if (vertical) {
+    classNames.push(getClassName('bpk-ticket--vertical'));
+    mainClassNames.push(getClassName('bpk-ticket__main--vertical'));
+    stubClassNames.push(getClassName('bpk-ticket__stub--vertical'));
+    punchlineClassNames.push(getClassName('bpk-ticket__punchline--horizontal'));
+    startNotchClassNames.push(getClassName('bpk-ticket__notch--left'));
+    endNotchClassNames.push(getClassName('bpk-ticket__notch--right'));
+  } else {
+    mainClassNames.push(getClassName('bpk-ticket__main--horizontal'));
+    stubClassNames.push(getClassName('bpk-ticket__stub--horizontal'));
+&nbsp;
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (!fallback) {
+      punchlineClassNames.push(getClassName('bpk-ticket__punchline--vertical'));
+      startNotchClassNames.push(getClassName('bpk-ticket__notch--top'));
+      endNotchClassNames.push(getClassName('bpk-ticket__notch--bottom'));
+    } else {
+<span class="cstat-no" title="statement not covered" >      classNames.push(getClassName('bpk-ticket--fallback'));</span>
+<span class="cstat-no" title="statement not covered" >      mainClassNames.push(getClassName('bpk-ticket__paper--fallback'));</span>
+<span class="cstat-no" title="statement not covered" >      stubClassNames.push(getClassName('bpk-ticket__paper--fallback'), getClassName('bpk-ticket__stub--fallback'));</span>
+<span class="cstat-no" title="statement not covered" >      punchlineClassNames.push(getClassName('bpk-ticket__punchline--fallback'));</span>
+    }
+  }
+&nbsp;
+  const classNameFinal = classNames.join(' ');
+&nbsp;
+  const contents = [
+    &lt;div
+      key="main"
+      className={mainClassNames.join(' ')}
+    &gt;
+      {children}
+    &lt;/div&gt;,
+    &lt;div
+      key="punchline"
+      className={punchlineClassNames.join(' ')}
+      role="presentation"
+      aria-hidden="true"
+    &gt;
+      &lt;div className={startNotchClassNames.join(' ')} /&gt;
+      &lt;div className={endNotchClassNames.join(' ')} /&gt;
+    &lt;/div&gt;,
+    &lt;div
+      key="stub"
+      className={stubClassNames.join(' ')}
+      {...stubProps}
+    &gt;
+      {stub}
+    &lt;/div&gt;,
+  ];
+&nbsp;
+  if (href) {
+    return (
+      &lt;a href={href} className={classNameFinal} {...rest}&gt;
+        { contents }
+      &lt;/a&gt;
+    );
+  }
+&nbsp;
+  return (
+    &lt;div role="button" className={classNameFinal} {...rest}&gt;
+      { contents }
+    &lt;/div&gt;
+  );
+};
+&nbsp;
+BpkTicket.propTypes = {
+  children: PropTypes.node.isRequired,
+  stub: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  href: PropTypes.string,
+  padded: PropTypes.bool,
+  vertical: PropTypes.bool,
+  stubClassName: PropTypes.string,
+  stubProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+};
+&nbsp;
+BpkTicket.defaultProps = {
+  className: null,
+  href: null,
+  padded: true,
+  vertical: false,
+  stubClassName: null,
+  stubProps: {},
+};
+&nbsp;
+export default BpkTicket;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Dec 01 2017 13:20:44 GMT+0000 (GMT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for packages/bpk-component-barchart/src/BpkBarchart.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">packages/bpk-component-barchart/src</a> BpkBarchart.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">83.33% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>35/42</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>9/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">84.21% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>32/38</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">108x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">108x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">108x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
+ * Backpack - Skyscanner's Design System
+ *
+ * Copyright 2017 Skyscanner Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+&nbsp;
+import PropTypes from 'prop-types';
+import debounce from 'lodash.debounce';
+import React, { Component } from 'react';
+import { scaleLinear, scaleBand } from 'd3-scale';
+import { spacingXs, lineHeightSm } from 'bpk-tokens/tokens/base.es6';
+import { cssModules } from 'bpk-react-utils';
+import BpkMobileScrollContainer from 'bpk-component-mobile-scroll-container';
+&nbsp;
+import BpkBarchartDefs from './BpkBarchartDefs';
+import BpkBarchartBars from './BpkBarchartBars';
+import BpkChartDataTable from './BpkChartDataTable';
+import BpkChartMargin from './BpkChartMargin';
+import BpkChartAxis from './BpkChartAxis';
+import BpkChartGridLines from './BpkChartGridLines';
+import BpkBarchartBar from './BpkBarchartBar';
+import dataProp from './customPropTypes';
+import { identity, remToPx } from './utils';
+import { applyArrayRTLTransform, applyMarginRTLTransform } from './RTLtransforms';
+import { ORIENTATION_X, ORIENTATION_Y } from './orientation';
+import STYLES from './bpk-barchart.scss';
+&nbsp;
+const getClassName = cssModules(STYLES);
+&nbsp;
+const spacing = remToPx(spacingXs);
+const lineHeight = remToPx(lineHeightSm);
+&nbsp;
+const getMaxYValue = (dataPoints, yScaleDataKey, outlierPercentage) =&gt; {
+  const meanValue =
+    dataPoints.reduce((d, t) =&gt; d + t, 0) / dataPoints.length;
+  const maxYValue = Math.max(...dataPoints);
+&nbsp;
+  return outlierPercentage !== null
+    ? <span class="branch-0 cbranch-no" title="branch not covered" >Math.min(</span>
+      maxYValue,
+      (meanValue * (outlierPercentage / 100)) + meanValue,
+    )
+    : maxYValue;
+};
+&nbsp;
+class BpkBarchart extends Component {
+  constructor(props) {
+    super(props);
+&nbsp;
+    this.state = {
+      width: props.initialWidth,
+      height: props.initialHeight,
+    };
+&nbsp;
+    this.xScale = scaleBand();
+    this.yScale = scaleLinear();
+&nbsp;
+    this.updateDimensions = this.updateDimensions.bind(this);
+    this.onWindowResize = debounce(this.updateDimensions, 100);
+  }
+&nbsp;
+  componentDidMount() {
+    this.updateDimensions();
+    window.addEventListener('resize', this.onWindowResize);
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  co</span>mponentWillUnmount() {
+<span class="cstat-no" title="statement not covered" >    window.removeEventListener('resize', this.onWindowResize);</span>
+  }
+&nbsp;
+  updateDimensions() {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (!this.svgEl) {
+      return;
+    }
+&nbsp;
+    const { width, height } = <span class="cstat-no" title="statement not covered" >this.svgEl.getBoundingClientRect();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.setState({ width, height });</span>
+  }
+&nbsp;
+  render() {
+    const {
+      className,
+      data,
+      initialWidth,
+      initialHeight,
+      xScaleDataKey,
+      yScaleDataKey,
+      outlierPercentage,
+      showGridlines,
+      xAxisMargin,
+      xAxisLabel,
+      xAxisTickValue,
+      xAxisTickOffset,
+      xAxisTickEvery,
+      yAxisMargin,
+      yAxisLabel,
+      yAxisTickValue,
+      yAxisNumTicks,
+      onBarClick,
+      onBarHover,
+      onBarTouch,
+      getBarLabel,
+      getBarSelection,
+      BarComponent,
+      disableDataTable,
+      ...rest
+    } = this.props;
+&nbsp;
+    const transformedData = applyArrayRTLTransform(data);
+    const margin = applyMarginRTLTransform({
+      top: spacing,
+      left: yAxisMargin,
+      right: 0,
+      bottom: xAxisMargin,
+    });
+&nbsp;
+    const classNames = [getClassName('bpk-barchart')];
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (className) { <span class="cstat-no" title="statement not covered" >classNames.push(className); </span>}
+&nbsp;
+    const width = this.state.width - margin.left - margin.right;
+    const height = this.state.height - margin.bottom - margin.top;
+    const maxYValue = getMaxYValue(data.map(d =&gt; d[yScaleDataKey]), yScaleDataKey, outlierPercentage);
+&nbsp;
+    this.xScale.rangeRound([0, width]);
+    this.xScale.domain(transformedData.map(d =&gt; d[xScaleDataKey]));
+    this.yScale.rangeRound([height, 0]);
+    this.yScale.domain([0, maxYValue]);
+&nbsp;
+    return (
+      &lt;BpkMobileScrollContainer&gt;
+        {!disableDataTable &amp;&amp; &lt;BpkChartDataTable
+          data={data}
+          xScaleDataKey={xScaleDataKey}
+          yScaleDataKey={yScaleDataKey}
+          xAxisLabel={xAxisLabel}
+          yAxisLabel={yAxisLabel}
+        /&gt;}
+        &lt;svg
+          xmlns="http://www.w3.org/2000/svg"
+          className={classNames.join(' ')}
+          width={this.state.width}
+          height={this.state.height}
+          ref={<span class="fstat-no" title="function not covered" >(s</span>vgEl) =&gt; { <span class="cstat-no" title="statement not covered" >this.svgEl = svgEl; </span>}}
+          {...rest}
+        &gt;
+          &lt;BpkBarchartDefs /&gt;
+          &lt;BpkChartMargin
+            margin={margin}
+          &gt;
+            &lt;BpkChartAxis
+              orientation={ORIENTATION_Y}
+              width={this.state.width}
+              height={this.state.height}
+              margin={margin}
+              scale={this.yScale}
+              tickValue={yAxisTickValue}
+              numTicks={yAxisNumTicks}
+              label={yAxisLabel}
+            /&gt;
+            &lt;BpkChartAxis
+              orientation={ORIENTATION_X}
+              width={this.state.width}
+              height={this.state.height}
+              margin={margin}
+              scale={this.xScale}
+              tickValue={xAxisTickValue}
+              tickEvery={xAxisTickEvery}
+              tickOffset={xAxisTickOffset}
+              label={xAxisLabel}
+            /&gt;
+            { showGridlines &amp;&amp; &lt;BpkChartGridLines
+              orientation={ORIENTATION_Y}
+              width={this.state.width}
+              height={this.state.height}
+              margin={margin}
+              scale={this.yScale}
+            /&gt; }
+            &lt;BpkBarchartBars
+              height={this.state.height}
+              margin={margin}
+              data={transformedData}
+              xScale={this.xScale}
+              yScale={this.yScale}
+              xScaleDataKey={xScaleDataKey}
+              yScaleDataKey={yScaleDataKey}
+              maxYValue={maxYValue}
+              outerPadding={showGridlines ? undefined : 0}
+              onBarClick={onBarClick}
+              onBarHover={onBarHover}
+              onBarTouch={onBarTouch}
+              getBarLabel={getBarLabel}
+              getBarSelection={getBarSelection}
+              BarComponent={BarComponent}
+            /&gt;
+          &lt;/BpkChartMargin&gt;
+        &lt;/svg&gt;
+      &lt;/BpkMobileScrollContainer&gt;
+    );
+  }
+}
+&nbsp;
+BpkBarchart.propTypes = {
+  data: dataProp,
+  xScaleDataKey: PropTypes.string.isRequired,
+  yScaleDataKey: PropTypes.string.isRequired,
+  xAxisLabel: PropTypes.string.isRequired,
+  yAxisLabel: PropTypes.string.isRequired,
+  initialWidth: PropTypes.number.isRequired,
+  initialHeight: PropTypes.number.isRequired,
+&nbsp;
+  className: PropTypes.string,
+  outlierPercentage: PropTypes.number,
+  showGridlines: PropTypes.bool,
+  xAxisMargin: PropTypes.number,
+  xAxisTickValue: PropTypes.func,
+  xAxisTickOffset: PropTypes.number,
+  xAxisTickEvery: PropTypes.number,
+  yAxisMargin: PropTypes.number,
+  yAxisTickValue: PropTypes.func,
+  yAxisNumTicks: PropTypes.number,
+  onBarClick: PropTypes.func,
+  onBarHover: PropTypes.func,
+  onBarTouch: PropTypes.func,
+  getBarLabel: PropTypes.func,
+  getBarSelection: PropTypes.func,
+  BarComponent: PropTypes.func,
+  disableDataTable: PropTypes.bool,
+};
+&nbsp;
+BpkBarchart.defaultProps = {
+  data: null,
+  className: null,
+  outlierPercentage: null,
+  showGridlines: false,
+  xAxisMargin: 2 * (lineHeight + spacing),
+  xAxisTickValue: identity,
+  xAxisTickOffset: 0,
+  xAxisTickEvery: 1,
+  yAxisMargin: (4 * lineHeight) + spacing,
+  yAxisTickValue: identity,
+  yAxisNumTicks: null,
+  onBarClick: null,
+  onBarHover: null,
+  onBarTouch: null,
+  getBarLabel: <span class="fstat-no" title="function not covered" >(p</span>oint, xScaleDataKey, yScaleDataKey) =&gt; <span class="cstat-no" title="statement not covered" >`${point[xScaleDataKey]} - ${point[yScaleDataKey]}`,</span>
+  getBarSelection: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >false,</span>
+  BarComponent: BpkBarchartBar,
+  disableDataTable: false,
+};
+&nbsp;
+export default BpkBarchart;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Dec 01 2017 13:20:44 GMT+0000 (GMT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for packages/bpk-component-banner-alert/src/BpkBannerAlert.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">packages/bpk-component-banner-alert/src</a> BpkBannerAlert.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">87.8% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>36/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">77.78% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>14/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">62.5% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.11% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>35/38</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
+ * Backpack - Skyscanner's Design System
+ *
+ * Copyright 2017 Skyscanner Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+&nbsp;
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { withButtonAlignment } from 'bpk-component-icon';
+import BpkAnimateHeight from 'bpk-animate-height';
+import BpkCloseButton from 'bpk-component-close-button';
+import TickCircleIcon from 'bpk-component-icon/sm/tick-circle';
+import ChevronDownIcon from 'bpk-component-icon/sm/chevron-down';
+import InfoCircleIcon from 'bpk-component-icon/sm/information-circle';
+import { durationSm } from 'bpk-tokens/tokens/base.es6';
+import { cssModules } from 'bpk-react-utils';
+&nbsp;
+import STYLES from './bpk-banner-alert.scss';
+&nbsp;
+const getClassName = cssModules(STYLES);
+&nbsp;
+const NeutralIcon = withButtonAlignment(InfoCircleIcon);
+const WarnIcon = withButtonAlignment(InfoCircleIcon);
+const ErrorIcon = withButtonAlignment(InfoCircleIcon);
+const SuccessIcon = withButtonAlignment(TickCircleIcon);
+const ExpandIcon = withButtonAlignment(ChevronDownIcon);
+&nbsp;
+export const ALERT_TYPES = {
+  SUCCESS: 'success',
+  WARN: 'warn',
+  ERROR: 'error',
+  NEUTRAL: 'neutral',
+};
+&nbsp;
+export const ARIA_LIVE = {
+  OFF: 'off',
+  ASSERTIVE: 'assertive',
+  POLITE: 'polite',
+};
+&nbsp;
+const getIconForType = (type) =&gt; {
+  const map = {
+    [ALERT_TYPES.SUCCESS]: &lt;SuccessIcon className={getClassName('bpk-banner-alert__success-icon')} /&gt;,
+    [ALERT_TYPES.WARN]: &lt;WarnIcon className={getClassName('bpk-banner-alert__warn-icon')} /&gt;,
+    [ALERT_TYPES.ERROR]: &lt;ErrorIcon className={getClassName('bpk-banner-alert__error-icon')} /&gt;,
+    [ALERT_TYPES.NEUTRAL]: &lt;NeutralIcon className={getClassName('bpk-banner-alert__neutral-icon')} /&gt;,
+  };
+&nbsp;
+  return map[type];
+};
+&nbsp;
+const ToggleButton = (props) =&gt; {
+  const classNames = [getClassName('bpk-banner-alert__expand-icon')];
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (props.expanded) { <span class="cstat-no" title="statement not covered" >classNames.push(getClassName('bpk-banner-alert__expand-icon--flipped')); </span>}
+&nbsp;
+  return (
+    &lt;button
+      className={getClassName('bpk-banner-alert__toggle-button')}
+      aria-label={props.label}
+      aria-expanded={props.expanded}
+      title={props.label}
+    &gt;
+      &lt;ExpandIcon
+        className={classNames.join(' ')}
+      /&gt;
+    &lt;/button&gt;
+  );
+};
+&nbsp;
+ToggleButton.propTypes = {
+  label: PropTypes.string.isRequired,
+  expanded: PropTypes.bool.isRequired,
+};
+&nbsp;
+class BpkBannerAlert extends Component {
+  constructor(props) {
+    super(props);
+&nbsp;
+    this.state = {
+      expanded: false,
+    };
+&nbsp;
+    this.onExpand = this.onExpand.bind(this);
+    this.onDismiss = this.onDismiss.bind(this);
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  on</span>Expand() {
+<span class="cstat-no" title="statement not covered" >    this.setState(<span class="fstat-no" title="function not covered" >st</span>ate =&gt; (<span class="cstat-no" title="statement not covered" >{</span></span>
+      expanded: !state.expanded,
+    }));
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  on</span>Dismiss() {
+<span class="cstat-no" title="statement not covered" >    if (this.props.onDismiss) {</span>
+<span class="cstat-no" title="statement not covered" >      this.props.onDismiss();</span>
+    }
+  }
+&nbsp;
+  render() {
+    const {
+      ariaLive,
+      children,
+      className,
+      dismissable,
+      dismissButtonLabel,
+      message,
+      onDismiss,
+      show,
+      type,
+      toggleButtonLabel,
+      ...rest
+    } = this.props;
+    const isExpanded = this.state.expanded;
+    const isExpandable = children;
+    const showChildren = isExpandable &amp;&amp; isExpanded;
+    const ariaRoles = ['alert'];
+&nbsp;
+    const headerClassNames = [getClassName('bpk-banner-alert__header')];
+    const sectionClassNames = ['bpk-banner-alert', `bpk-banner-alert--${type}`]
+      .map(sectionClassName =&gt; getClassName(sectionClassName));
+&nbsp;
+    if (className) { sectionClassNames.push(className); }
+    if (isExpandable) {
+      headerClassNames.push(getClassName('bpk-banner-alert__header--expandable'));
+      ariaRoles.push('button');
+    }
+&nbsp;
+    /* eslint-disable
+    jsx-a11y/no-static-element-interactions,
+    jsx-a11y/click-events-have-key-events,
+    jsx-a11y/no-noninteractive-element-interactions
+    */
+    // Disabling 'click-events-have-key-events and interactive-supports-focus' because header element is not focusable.
+    // ToggleButton is focusable and works for this.
+    return !show ? null : (
+      &lt;section className={sectionClassNames.join(' ')} {...rest}&gt;
+        &lt;header
+          role={ariaRoles.join(' ')}
+          aria-live={ariaLive}
+          className={headerClassNames.join(' ')}
+          onClick={this.onExpand}
+        &gt;
+          &lt;span className={getClassName('bpk-banner-alert__icon')}&gt;{getIconForType(type)}&lt;/span&gt;
+          &amp;nbsp;
+          &lt;span className={getClassName('bpk-banner-alert__message')}&gt;{message}&lt;/span&gt;
+          &amp;nbsp;
+          {isExpandable ? (
+            &lt;span className={getClassName('bpk-banner-alert__toggle')}&gt;
+              &lt;ToggleButton expanded={isExpanded} label={toggleButtonLabel} /&gt;
+            &lt;/span&gt;
+          ) : null}
+          {dismissable ? (
+            &lt;BpkCloseButton
+              className={getClassName('bpk-banner-alert__toggle-button')}
+              onClick={this.onDismiss}
+              aria-label={dismissButtonLabel}
+              label={dismissButtonLabel}
+            /&gt;
+          ) : null}
+        &lt;/header&gt;
+        &lt;BpkAnimateHeight duration={parseInt(durationSm, 10)} height={showChildren ? <span class="branch-0 cbranch-no" title="branch not covered" >'auto' </span>: 0}&gt;
+          &lt;div className={getClassName('bpk-banner-alert__children-container')}&gt;{children}&lt;/div&gt;
+        &lt;/BpkAnimateHeight&gt;
+      &lt;/section&gt;
+    );
+    /* eslint-enable */
+  }
+}
+&nbsp;
+BpkBannerAlert.propTypes = {
+  type: PropTypes.oneOf([
+    ALERT_TYPES.SUCCESS,
+    ALERT_TYPES.WARN,
+    ALERT_TYPES.ERROR,
+    ALERT_TYPES.NEUTRAL,
+  ]).isRequired,
+  message: PropTypes.node.isRequired,
+  ariaLive: PropTypes.oneOf([
+    ARIA_LIVE.OFF,
+    ARIA_LIVE.ASSERTIVE,
+    ARIA_LIVE.POLITE,
+  ]),
+  children: PropTypes.node,
+  dismissable: PropTypes.bool,
+  dismissButtonLabel: PropTypes.string,
+  onDismiss: PropTypes.func,
+  show: PropTypes.bool,
+  toggleButtonLabel: PropTypes.string,
+  className: PropTypes.string,
+};
+&nbsp;
+BpkBannerAlert.defaultProps = {
+  ariaLive: ARIA_LIVE.ASSERTIVE,
+  children: null,
+  dismissable: false,
+  dismissButtonLabel: null,
+  onDismiss: null,
+  show: true,
+  toggleButtonLabel: null,
+  className: null,
+};
+&nbsp;
+export default BpkBannerAlert;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Dec 01 2017 13:20:44 GMT+0000 (GMT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
