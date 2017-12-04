@@ -48,9 +48,15 @@ class App extends Component {
   render() {
     return (
       <div>
-        <header className={`${getClassName('App__header')}`}>
-          <BpkText tagName="h1" textStyle="xxl" className={getClassName('App__text')}>George Gillams</BpkText>
-          <BpkText tagName="h3" textStyle="lg" className={getClassName('App__text')}>Open-source Software Engineer</BpkText>
+        <header className={`${getClassName('App__header')} ${getClassName('App--centered')}`}>
+          <BpkGridContainer>
+            <BpkGridRow>
+              <BpkGridColumn width={12}>
+                <BpkText tagName="h1" textStyle="xxl" className={getClassName('App__text')}>George Gillams</BpkText>
+                <BpkText tagName="h3" textStyle="md" className={getClassName('App__text')}>Open-source Software Engineer</BpkText>
+              </BpkGridColumn>
+            </BpkGridRow>
+          </BpkGridContainer>
         </header>
         <main className={getClassName('App__main')}>
           <BpkGridContainer>

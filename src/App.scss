@@ -19,6 +19,7 @@
   }
 
   &__big-picture-text {
+    // margin-top: 50rem;
     text-shadow: 0 0 8px rgba(0,0,0,.25);
     color: $bpk-color-white;
 
@@ -39,8 +40,7 @@
   }
 
   &__header {
-    margin: -10px;
-    padding: $bpk-spacing-md 0;
+    padding: $bpk-spacing-xs 0;
     background-color: $bpk-color-gray-900;
     color: $bpk-color-white;
     margin-bottom: $bpk-spacing-sm;

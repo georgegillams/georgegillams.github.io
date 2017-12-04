@@ -1,9 +1,10 @@
 {
   "name": "curriculum-vitae",
-  "homepage": "http://georgegillams.github.io",
+  "homepage": "https://georgegillams.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "backpack-react-scripts": "5.0.2",
     "bpk-animate-height": "^1.0.31",
     "bpk-component-accordion": "^1.1.40",
@@ -12,7 +13,8 @@
     "bpk-component-horizontal-nav": "^1.0.40",
     "bpk-component-input": "^3.2.36",
     "bpk-tokens": "^26.4.5",
-    "mathjs": "^3.16.5"
+    "mathjs": "^3.16.5",
+    "react-file-reader": "git://github.com/georgegillams/react-file-reader.git#add-support-for-userland-styling"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -33,6 +35,7 @@
     "bpk-component-grid": "^1.1.35",
     "bpk-component-text": "^1.0.27",
     "bpk-mixins": "^17.0.11",
+    "bpk-stylesheets": "^3.2.73",
     "gh-pages": "^1.1.0",
     "react": "^15.6.2",
     "react-dom": "^15.6.2"

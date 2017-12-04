@@ -7,6 +7,7 @@ import BpkText from 'bpk-component-text';
 import AnimateHeight from 'bpk-animate-height';
 import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
 import BpkCheckBox from 'bpk-component-checkbox';
+import ReactFileReader from 'react-file-reader';
 import { colors } from 'bpk-tokens/tokens/base.es6';
 import { alignToButton } from 'bpk-component-icon';
 import BpkSmallDownloadIcon from 'bpk-component-icon/sm/download';
