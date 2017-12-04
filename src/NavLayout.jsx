@@ -15,6 +15,10 @@ import BpkSmallUpgradeIcon from 'bpk-component-icon/sm/upgrade';
 // import * as TOKENS from 'bpk-tokens/tokens/ios/base.react.native.es6';
 import BpkHorizontalNav, { BpkHorizontalNavItem } from 'bpk-component-horizontal-nav';
 import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
+import MainContent from './MainContent';
+import ProfilePic from './ProfilePic';
+import ComingSoon from './ComingSoon';
+import GetSocial from './GetSocial';
 
 import STYLES from './nav-layout.scss';
 
@@ -29,10 +33,11 @@ const NavLayout = (props) => {
   return (
       <div className={getClassName('nav-layout__main')}>
         <span className={getClassName('nav-layout__nav-col')}>
-          Navigation
+          <ProfilePic/>
         </span>
         <span className={getClassName('nav-layout__content-col')}>
-          Content
+          <GetSocial/>
+          <ComingSoon/>
         </span>
       </div>
   );
