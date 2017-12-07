@@ -6,7 +6,7 @@
   }
 
   &__download-button {
-    color: $bpk-color-blue-500
+    color: $bpk-color-blue-500;
   }
 
   &__download-button-container {
@@ -34,9 +34,6 @@
     }
   }
 
-  &__container {
-  }
-
   &__big-picture-text {
     margin-top: 3rem;
     color: $bpk-color-gray-500;
@@ -54,5 +51,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(1rem) brightness(.75);
+  }
+
+  &__cv-link {
+    color: $bpk-color-blue-500;
+    text-decoration: none;
   }
 }
