@@ -1,9 +1,11 @@
 {
-  "main.css": "static/css/main.d5b954ae.css",
-  "main.js": "static/js/main.08969e3b.js",
-  "main.js.map": "static/js/main.08969e3b.js.map",
+  "main.css": "static/css/main.f1c624ed.css",
+  "main.js": "static/js/main.cd10a448.js",
+  "main.js.map": "static/js/main.cd10a448.js.map",
   "static/media/facebook.png": "static/media/facebook.e0899a2d.png",
   "static/media/flickr.png": "static/media/flickr.cdb7b290.png",
   "static/media/georgegillams.jpg": "static/media/georgegillams.7c3f6cb5.jpg",
-  "static/media/netflixDownloads.png": "static/media/netflixDownloads.66bc6ec2.png"
+  "static/media/humans.png": "static/media/humans.b1074696.png",
+  "static/media/netflixDownloads.png": "static/media/netflixDownloads.66bc6ec2.png",
+  "static/media/tiggsAmazed.png": "static/media/tiggsAmazed.cd85bc92.png"
 }
