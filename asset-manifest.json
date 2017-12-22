@@ -1,11 +1,14 @@
 {
-  "main.css": "static/css/main.25b4f3a5.css",
-  "main.js": "static/js/main.03b53780.js",
-  "main.js.map": "static/js/main.03b53780.js.map",
+  "main.css": "static/css/main.19e9fd09.css",
+  "main.js": "static/js/main.25f2a246.js",
+  "main.js.map": "static/js/main.25f2a246.js.map",
+  "static/media/Iceland-Regular.ttf": "static/media/Iceland-Regular.85ac02da.ttf",
   "static/media/facebook.png": "static/media/facebook.e0899a2d.png",
   "static/media/flickr.png": "static/media/flickr.cdb7b290.png",
+  "static/media/georgeAndCharlie.jpg": "static/media/georgeAndCharlie.5daef5f7.jpg",
   "static/media/georgegillams.jpg": "static/media/georgegillams.7c3f6cb5.jpg",
   "static/media/humans.png": "static/media/humans.b1074696.png",
+  "static/media/logo.svg": "static/media/logo.44f4d7a7.svg",
   "static/media/netflixDownloads.png": "static/media/netflixDownloads.66bc6ec2.png",
   "static/media/tiggsAmazed.png": "static/media/tiggsAmazed.cd85bc92.png"
 }
