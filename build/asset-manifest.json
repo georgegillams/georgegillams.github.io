@@ -1,15 +1,16 @@
 {
   "main.css": "static/css/main.19e9fd09.css",
-  "main.js": "static/js/main.e2cf81de.js",
-  "main.js.map": "static/js/main.e2cf81de.js.map",
+  "main.js": "static/js/main.83730cba.js",
+  "main.js.map": "static/js/main.83730cba.js.map",
   "static/media/Iceland-Regular.ttf": "static/media/Iceland-Regular.85ac02da.ttf",
-  "static/media/facebook.png": "static/media/facebook.e0899a2d.png",
-  "static/media/flickr.png": "static/media/flickr.cdb7b290.png",
-  "static/media/georgeAndCharlie.jpg": "static/media/georgeAndCharlie.5daef5f7.jpg",
-  "static/media/georgegillams.jpg": "static/media/georgegillams.7c3f6cb5.jpg",
-  "static/media/humans.jpg": "static/media/humans.e7ed48e4.jpg",
+  "static/media/facebook.png": "static/media/facebook.4a1a59f6.png",
+  "static/media/flickr.png": "static/media/flickr.77ef6b57.png",
+  "static/media/georgeAndCharlie.jpg": "static/media/georgeAndCharlie.6ba4e32b.jpg",
+  "static/media/georgegillams.jpg": "static/media/georgegillams.03d3ae80.jpg",
+  "static/media/humans.jpg": "static/media/humans.7e8489b1.jpg",
+  "static/media/linkedin.png": "static/media/linkedin.8531a1cc.png",
   "static/media/logo.svg": "static/media/logo.44f4d7a7.svg",
-  "static/media/munichPhil.jpg": "static/media/munichPhil.b1e022dc.jpg",
-  "static/media/netflixDownloads.png": "static/media/netflixDownloads.66bc6ec2.png",
-  "static/media/tiggsAmazed.jpg": "static/media/tiggsAmazed.6868c70e.jpg"
+  "static/media/munichPhil.jpg": "static/media/munichPhil.5e289b17.jpg",
+  "static/media/netflixDownloads.png": "static/media/netflixDownloads.981e0bef.png",
+  "static/media/tiggsAmazed.jpg": "static/media/tiggsAmazed.9f6c6926.jpg"
 }
