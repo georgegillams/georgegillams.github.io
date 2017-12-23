@@ -1,7 +1,7 @@
 {
   "main.css": "static/css/main.19e9fd09.css",
-  "main.js": "static/js/main.869efeea.js",
-  "main.js.map": "static/js/main.869efeea.js.map",
+  "main.js": "static/js/main.e2cf81de.js",
+  "main.js.map": "static/js/main.e2cf81de.js.map",
   "static/media/Iceland-Regular.ttf": "static/media/Iceland-Regular.85ac02da.ttf",
   "static/media/facebook.png": "static/media/facebook.e0899a2d.png",
   "static/media/flickr.png": "static/media/flickr.cdb7b290.png",
@@ -9,6 +9,7 @@
   "static/media/georgegillams.jpg": "static/media/georgegillams.7c3f6cb5.jpg",
   "static/media/humans.jpg": "static/media/humans.e7ed48e4.jpg",
   "static/media/logo.svg": "static/media/logo.44f4d7a7.svg",
+  "static/media/munichPhil.jpg": "static/media/munichPhil.b1e022dc.jpg",
   "static/media/netflixDownloads.png": "static/media/netflixDownloads.66bc6ec2.png",
   "static/media/tiggsAmazed.jpg": "static/media/tiggsAmazed.6868c70e.jpg"
 }
