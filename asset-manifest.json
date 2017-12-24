@@ -1,7 +1,7 @@
 {
   "main.css": "static/css/main.0bf6c699.css",
-  "main.js": "static/js/main.98d4ce78.js",
-  "main.js.map": "static/js/main.98d4ce78.js.map",
+  "main.js": "static/js/main.9e228fdb.js",
+  "main.js.map": "static/js/main.9e228fdb.js.map",
   "static/media/facebook.png": "static/media/facebook.4a1a59f6.png",
   "static/media/flickr.png": "static/media/flickr.77ef6b57.png",
   "static/media/georgeAndCharlie.jpg": "static/media/georgeAndCharlie.6ba4e32b.jpg",
@@ -11,5 +11,6 @@
   "static/media/logo.svg": "static/media/logo.66a676b5.svg",
   "static/media/munichPhil.jpg": "static/media/munichPhil.906cb55b.jpg",
   "static/media/netflixDownloads.png": "static/media/netflixDownloads.981e0bef.png",
+  "static/media/sealPhotobomb.jpg": "static/media/sealPhotobomb.2f634f4a.jpg",
   "static/media/tiggsAmazed.jpg": "static/media/tiggsAmazed.b8aced15.jpg"
 }
