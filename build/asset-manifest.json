@@ -1,7 +1,7 @@
 {
-  "main.css": "static/css/main.2a87da82.css",
-  "main.js": "static/js/main.df92ff35.js",
-  "main.js.map": "static/js/main.df92ff35.js.map",
+  "main.css": "static/css/main.7e115747.css",
+  "main.js": "static/js/main.c01036dd.js",
+  "main.js.map": "static/js/main.c01036dd.js.map",
   "static/media/blackwood.jpg": "static/media/blackwood.02fb4813.jpg",
   "static/media/degreeCertificate.jpg": "static/media/degreeCertificate.b591ac20.jpg",
   "static/media/dropbox.png": "static/media/dropbox.94a17123.png",
@@ -25,5 +25,6 @@
   "static/media/proposal.jpg": "static/media/proposal.e615f404.jpg",
   "static/media/sealPhotobomb.jpg": "static/media/sealPhotobomb.2f634f4a.jpg",
   "static/media/starbucks.jpg": "static/media/starbucks.699d32ba.jpg",
-  "static/media/tiggsAmazed.jpg": "static/media/tiggsAmazed.2d7581d9.jpg"
+  "static/media/tiggsAmazed.jpg": "static/media/tiggsAmazed.2d7581d9.jpg",
+  "static/media/vim.jpg": "static/media/vim.d9af231d.jpg"
 }
